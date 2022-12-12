@@ -6,7 +6,7 @@
  */
 
 //implement Shape interface and provide abstract method implementation
-public class Rectangle {
+public class Rectangle implements Shape {
 
     /*
     Define instance variables of rectangle as below
@@ -15,8 +15,8 @@ public class Rectangle {
     double height
      */
 
-
-
+    private double width;
+    private double height;
 
     /*
     Override area and perimeter methods here
@@ -26,7 +26,42 @@ public class Rectangle {
     */
 
 
+    public double getWidth() {
+        return width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    @java.lang.Override
+    public double area() {
+        return height * width;
+    }
+
+    @java.lang.Override
+    public double perimeter() {
+        return 2 * (width * height);
+    }
+
+
 
     //Override toString() method here
 
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
+    }
 }

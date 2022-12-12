@@ -6,7 +6,7 @@
  */
 
 //implement Shape interface and provide abstract method implementation
-public class Square{
+public class Square implements Shape{
 
     /*
     Define an instance variable for Square called as side
@@ -14,6 +14,15 @@ public class Square{
     double side
      */
 
+    private double side;
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        this.side = side;
+    }
 
 
 
@@ -24,9 +33,24 @@ public class Square{
     Perimeter of a square can be found as => 4 * side
     */
 
+    @Override
+    public double area() {
+        return side * side;
+    }
+
+    @Override
+    public double perimeter() {
+        return 4 * side;
+    }
+
 
 
 
     //Override toString() method here
 
-}
+    @Override
+    public String toString() {
+        return "Square{" +
+                "side=" + side +
+                '}';
+}}
