@@ -42,12 +42,12 @@ public class Rectangle implements Shape {
         this.height = height;
     }
 
-    @java.lang.Override
+    @Override
     public double area() {
         return height * width;
     }
 
-    @java.lang.Override
+    @Override
     public double perimeter() {
         return 2 * (width * height);
     }

@@ -44,12 +44,12 @@ public class Circle implements Shape{
     Basically it is => 2 * pi * radius
     */
 
-    @java.lang.Override
+    @Override
     public double area() {
         return pi * radius * radius;
     }
 
-    @java.lang.Override
+    @Override
     public double perimeter() {
         return 2 * pi * radius;
     }
@@ -57,7 +57,7 @@ public class Circle implements Shape{
 
     //Override toString() method here
 
-    @java.lang.Override
+    @Override
     public java.lang.String toString() {
         return "Circle{" +
                 "radius=" + radius +
