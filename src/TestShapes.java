@@ -42,9 +42,6 @@ public class TestShapes {
          */
 
 
-        Circle circle = new Circle();
-        circle.setRadius(4.0);
-
         Rectangle rectangle = new Rectangle();
         rectangle.setWidth(5.5);
         rectangle.setHeight(6.0);
@@ -52,17 +49,22 @@ public class TestShapes {
         Square square = new Square();
         square.setSide(2.5);
 
+        Circle circle = new Circle();
+        circle.setRadius(4.0);
+
+        System.out.println(circle);
         System.out.println("Area of the Circle is = " + circle.area());
-        System.out.println("Perimeter of the Circle is = " + circle.perimeter() + "\n");
+        System.out.println("Perimeter of the Circle is = " + circle.perimeter());
 
         System.out.println(rectangle);
         System.out.println("Area of the Rectangle is = " + rectangle.area());
-        System.out.println("Perimeter of the Rectangle is = " + rectangle.perimeter() + "\n");
+        System.out.println("Perimeter of the Rectangle is = " + rectangle.perimeter());
 
         System.out.println(square);
         System.out.println("Area of the Square is = " + square.area());
-        System.out.println("Perimeter of the Square is = " + square.perimeter() + "\n");
+        System.out.println("Perimeter of the Square is = " + square.perimeter());
 
-        System.out.println("Circle has the largest area as " + Math.max(Math.max(circle.area(), rectangle.area()), square.area()));
+        System.out.println("Circle has the largest area as " +
+                Math.max(Math.max(circle.area(), rectangle.area()), square.area()));
     }
 }

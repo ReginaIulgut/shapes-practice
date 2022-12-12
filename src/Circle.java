@@ -17,7 +17,6 @@ public class Circle implements Shape{
     private static final double pi = 3.14;
 
 
-
     /*
     Define an instance variable for Circle called as radius
     Instance variable must be encapsulated
@@ -31,8 +30,9 @@ public class Circle implements Shape{
 
     public void setRadius(double radius) {
         this.radius = radius;
-
     }
+
+
     /*
     Override area and perimeter methods here
     REMEMBER:
@@ -62,5 +62,5 @@ public class Circle implements Shape{
         return "Circle{" +
                 "radius=" + radius +
                 '}';
-
-}}
+    }
+}

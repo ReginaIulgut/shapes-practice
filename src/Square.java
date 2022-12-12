@@ -24,14 +24,13 @@ public class Square implements Shape{
         this.side = side;
     }
 
-
-
     /*
     Override area and perimeter methods here
     REMEMBER:
     Area of a square can be found as => side * side
     Perimeter of a square can be found as => 4 * side
     */
+
 
     @Override
     public double area() {
@@ -44,8 +43,6 @@ public class Square implements Shape{
     }
 
 
-
-
     //Override toString() method here
 
     @Override
@@ -53,4 +50,5 @@ public class Square implements Shape{
         return "Square{" +
                 "side=" + side +
                 '}';
-}}
+    }
+}
